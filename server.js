@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 
 
 //Routes give server map of how to respond when users visit
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 
 //Listener to start server
